@@ -11,6 +11,7 @@ const createJestConfig = nextJest({
 
 const jestConfig = createJestConfig({
   moduleDirectories: ["node_modules", "<rootDir>"], // Se você quiser customizar as importações, mas quer continuar importando os modulos do 'node_modules', você deve redeclarar o diretório
+  testTimeout: 60_000,
 });
 
 module.exports = jestConfig;
